@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="js/Producto.class.js"></script>   
+    <script defer src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/4cc6ed8424.js" crossorigin="anonymous"></script>
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <div id="grilla">
+        <header id="navegador" class="navegador header">
+            <div>
+                <h1 class="chamoOriginal logo"><span class="el logo">El</span> Chamo Original</h1>
+            </div>
+
+            <div class="car">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+        </header>
+
+        <main id="principal">
+            <div class="tarjeta-rest">
+                <h2>Agregar Productos</h2>
+                <div>
+                    <strong>Tipo de comida</strong>
+                </div>
+                <div>
+                    <form id="formularioProductos" class="formProductos" >
+                        <div class="cardProductos">
+                            <div class="inputCards">
+                                <div class="logoCards">
+                                    <i class="fa-solid fa-hotdog"></i>
+                                    <i class="fa-solid fa-burger"></i>
+                                </div>
+                                <input type="radio" name="status" value="ComidaRapida" checked> Comida Rapida
+                            </div>
+                            <div class="inputCards">
+                                <i class="fa-solid fa-utensils logoCards"></i>
+                                <input type="radio" name="status" value="Almuerzo"> Almuerzo
+                            </div>
+                            <div class="inputCards">
+                                <i class="fa-solid fa-bowl-rice logoCards"></i>
+                                <input type="radio" name="status" value="Arroz"> Arroz
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="text" placeholder="Ingrese Nombre" id="nombreProducto" class="inputCaja">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Ingrese Descripción" id="descripcionProducto"
+                                    class="inputCaja">
+                            </div>
+                            <div>
+                                <input type="number" min="3000" placeholder="Ingrese Valor" id="precioProducto"
+                                    class="inputCaja">
+                            </div>
+                        </div>                        
+                                <input type="submit" value="Guardar">
+                    </form>
+                </div>
+
+            </div>
+        </main>
+
+        <section id="producto" class="seccion">
+
+            <!-- Comida Rápida -->
+            <div id="contComidaRapida">
+                <div class="txtSecccionComida">
+                    <h2>Comidas Rápidas</h2>
+                </div>
+
+                <!-- <div class="card wrap">
+                    <div class="tarjeta-rest">
+                        <div class="logoCards">
+                            <i class="fa-solid fa-hotdog"></i>
+                            <i class="fa-solid fa-burger"></i>
+                        </div>
+                        <div class="wrap-text_tarjeta-rest">
+
+                            <h3>Hamburguesa Sencilla</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt, architecto
+                                ipsa qui reiciendis ratione corporis illum quae magni odit explicabo repudiandae ut aut
+                                velit.</p>
+                            <div class="cta-wrap_tarjera-rest">
+                                <div class="precio_tarjeta-rest">
+                                    <span>12$</span>
+                                </div>
+
+                                <div class="cta_tarjeta-rest">
+                                    <a href="">Pedir ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- Almuerzos -->
+            <div class="contAlmuerzo">
+                <div class="txtSecccionComida">
+                    <h2>Almuerzos</h2>
+                </div>
+                <div class="card wrap">
+                    <div class="tarjeta-rest">
+                        <div class="logoCards">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="wrap-text_tarjeta-rest">
+                            <h3>Almuerzo Bandeja Paisa</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem beatae voluptatum iusto!
+                                Officia, beatae voluptatum.</p>
+                            <div class="cta-wrap_tarjera-rest">
+                                <div class="precio_tarjeta-rest">
+                                    <span>12$</span>
+                                </div>
+                                <div class="cta_tarjeta-rest">
+                                    <a href="">Pedir ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Arroces -->
+            <div class="contArroz">
+                <div class="txtSecccionComida">
+                    <h2>Arroces</h2>
+                </div>
+                <div class="card wrap">
+                    <div class="tarjeta-rest">
+                        <div class="logoCards">
+                            <i class="fa-solid fa-bowl-rice"></i>
+                        </div>
+                        <div class="wrap-text_tarjeta-rest">
+                            <h3>Arroz Paisa</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem beatae voluptatum iusto!
+                                Officia, beatae voluptatum.</p>
+                            <div class="cta-wrap_tarjera-rest">
+                                <div class="precio_tarjeta-rest">
+                                    <span>12$</span>
+                                </div>
+                                <div class="cta_tarjeta-rest">
+                                    <a href="">Pedir ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>
+  
